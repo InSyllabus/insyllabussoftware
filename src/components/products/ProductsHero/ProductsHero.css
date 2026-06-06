@@ -1,0 +1,23 @@
+.products-hero {
+  min-height: 60vh;
+
+  display: flex;
+  align-items: center;
+
+  background:
+  linear-gradient(
+    135deg,
+    #eef2ff,
+    #ffffff
+  );
+}
+
+.products-hero .hero-description {
+  max-width: 800px;
+  margin: 20px auto 0;
+  text-align: center;
+
+  color: #64748b;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}

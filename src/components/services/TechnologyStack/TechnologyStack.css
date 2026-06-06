@@ -1,0 +1,35 @@
+.tech-stack-card {
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 25px;
+
+  text-align: center;
+
+  height: 100%;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+  transition: 0.3s;
+}
+
+.tech-stack-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 20px 40px rgba(79, 70, 229, 0.12);
+}
+
+.tech-stack-icon {
+  font-size: 2rem;
+
+  color: var(--primary);
+
+  margin-bottom: 12px;
+}
+
+.tech-stack-card h6 {
+  margin: 0;
+
+  font-weight: 600;
+}

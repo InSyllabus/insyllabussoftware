@@ -1,0 +1,67 @@
+.services-section {
+  background: #ffffff;
+}
+
+.section-tag {
+  display: inline-block;
+  background: rgba(79, 70, 229, 0.1);
+  color: var(--primary);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.8);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.3);
+
+  border-radius: 24px;
+
+  padding: 25px;
+
+  height: 100%;
+
+  box-shadow: 0 10px 35px rgba(0,0,0,.05);
+
+  transition: all .3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 20px 50px rgba(79,70,229,.15);
+}
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--gradient);
+
+  color: white;
+
+  font-size: 1.8rem;
+
+  border-radius: 18px;
+
+  margin-bottom: 20px;
+}
+
+.service-card h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+.services-section .row {
+  margin-top: 20px;
+}

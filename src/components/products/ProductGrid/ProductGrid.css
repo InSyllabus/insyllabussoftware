@@ -1,0 +1,17 @@
+.coming-soon-card {
+  height: 100%;
+
+  border: 2px dashed #cbd5e1;
+
+  border-radius: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  min-height: 450px;
+
+  text-align: center;
+}

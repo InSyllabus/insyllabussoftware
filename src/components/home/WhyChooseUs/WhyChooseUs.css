@@ -1,0 +1,45 @@
+.why-section {
+  background: #f8fafc;
+}
+
+.why-card {
+  background: white;
+  padding: 28px;
+  border-radius: 24px;
+  height: 100%;
+  transition: all 0.3s ease;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.why-card:hover {
+  box-shadow: 0 20px 50px rgba(79,70,229,0.12);
+}
+
+.why-icon {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+
+  background: var(--gradient);
+
+  color: white;
+
+  font-size: 1.7rem;
+
+  margin-bottom: 20px;
+}
+
+.why-card h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.why-card p {
+  color: #64748b;
+}

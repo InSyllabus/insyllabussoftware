@@ -1,0 +1,43 @@
+.tech-card {
+  background: white;
+
+  padding: 30px 20px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.05);
+
+  transition: .3s;
+}
+
+.tech-card svg {
+  font-size: 2rem;
+
+  color: var(--primary);
+
+  margin-bottom: 12px;
+}
+
+.tech-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 20px 40px rgba(79,70,229,.12);
+}
+
+.tech-icon {
+  font-size: 2rem;
+
+  color: var(--primary);
+
+  margin-bottom: 12px;
+}
+
+.tech-card h6 {
+  margin: 0;
+
+  font-weight: 600;
+}

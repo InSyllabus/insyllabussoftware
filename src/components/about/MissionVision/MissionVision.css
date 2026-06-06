@@ -1,0 +1,37 @@
+.mission-card,
+.vision-card {
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 24px;
+
+  height: 100%;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.05);
+
+  transition: all .3s ease;
+}
+
+.mission-card:hover,
+.vision-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 50px rgba(79,70,229,.12);
+}
+
+.mission-card h3,
+.vision-card h3 {
+  font-size: 2rem;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+
+  color: var(--primary);
+}
+
+.mission-card p,
+.vision-card p {
+  color: #64748b;
+  line-height: 1.8;
+}

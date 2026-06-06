@@ -1,0 +1,32 @@
+.contact-hero {
+  min-height: 45vh;
+
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #eef2ff,
+    #ffffff
+  );
+}
+
+.contact-hero .hero-description {
+  max-width: 700px;
+  margin: 25px auto 0;
+  text-align: center;
+  color: #64748b;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    min-height: 35vh;
+    padding: 50px 0;
+  }
+
+  .contact-hero .hero-title {
+    font-size: 2.5rem;
+  }
+}
