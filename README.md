@@ -1,16 +1,69 @@
-# React + Vite
+# InSyllabus Softwares Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Official corporate website for **InSyllabus Softwares**, showcasing our services, products, technology expertise, and company information.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+InSyllabus Softwares is a software development company focused on building innovative digital products, web applications, mobile applications, and AI-powered solutions.
 
-## React Compiler
+This website serves as the company's digital presence and provides information about:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Company Profile
+* Services
+* Products
+* Technology Expertise
+* Contact Information
+* Business Solutions
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Products
+
+### InSyllabus
+
+Educational technology platform designed to simplify academic management and improve learning experiences.
+
+Website:
+https://insyllabus.com
+
+### RidoTag
+
+Smart safety and identification solution for vehicles and users.
+
+Website:
+https://ridotag.com
+
+---
+
+## Services
+
+* Custom Software Development
+* Enterprise Applications
+* Website Development
+* Mobile Application Development
+* AI Automation Solutions
+* API Development & Integration
+* Technical Consulting
+
+---
+
+## Contact
+
+**InSyllabus Softwares**
+
+Email:
+[support@insyllabussoftwares.com](mailto:support@insyllabussoftwares.com)
+
+Phone:
++91 77220 35103
+
+Location:
+Pune, Maharashtra, India
+
+---
+
+## License
+
+Copyright © InSyllabus Softwares.
+
+All Rights Reserved.
