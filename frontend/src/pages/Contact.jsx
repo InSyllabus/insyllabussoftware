@@ -9,7 +9,7 @@ const Contact = () => {
     <>
       <ContactHero />
       <ContactCards />
-      {/* <ContactForm /> */}
+      <ContactForm />
       <ContactMap />
       <CTASection />
     </>

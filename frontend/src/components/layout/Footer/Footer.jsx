@@ -67,9 +67,21 @@ const Footer = () => {
             <h5>Products</h5>
 
             <ul>
-              <li>InSyllabus</li>
+              <li>
+                <a
+                  href="https://insyllabus.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  InSyllabus
+                </a>
+              </li>
 
-              <li>RidoTag</li>
+              <li>
+                <a href="https://ridotag.com/" target="_blank" rel="noreferrer">
+                  RidoTag
+                </a>
+              </li>
             </ul>
           </div>
 
