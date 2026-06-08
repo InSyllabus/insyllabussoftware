@@ -10,8 +10,8 @@ connectDB();
 
 const whitelist = [
   "http://localhost:5173",
-  "https://insyllabussoftwares.com",
-  "https://www.insyllabussoftwares.com",
+  "https://insyllabussoftware.com",
+  "https://www.insyllabussoftware.com",
 ];
 
 app.use(
