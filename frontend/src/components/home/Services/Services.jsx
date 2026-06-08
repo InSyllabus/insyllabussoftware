@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-
 import { FaCode, FaGlobe, FaMobileAlt, FaCogs, FaRobot } from "react-icons/fa";
-
+import heroTeam from "../../../assets/images/hero/hero-team.jpg";
 import "./Services.css";
 
 const services = [
@@ -53,6 +52,16 @@ const Services = () => {
             real business challenges.
           </p>
         </div>
+
+        <motion.div
+  className="services-banner"
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.7 }}
+>
+  <img src={heroTeam} alt="Software Team Collaboration" />
+</motion.div>
 
         <div className="row g-4 justify-content-center">
           {services.map((service, index) => (

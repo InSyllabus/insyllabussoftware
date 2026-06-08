@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "./Hero.css";
-
+import heroAnalytics from "../../../assets/images/hero/hero-analytics.jpg";
 
 const Hero = () => {
   return (
     <section className="hero-section">
       <div className="container">
         <div className="row align-items-center">
-          {/* Left Content */}
 
+          {/* Left Content */}
           <div className="col-lg-6">
             <motion.span
               className="hero-badge"
@@ -56,9 +56,8 @@ const Hero = () => {
           </div>
 
           {/* Right Side */}
-
           <div className="col-lg-6">
-            <motion.div
+            {/* <motion.div
               className="hero-card"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -81,7 +80,20 @@ const Hero = () => {
                   <div className="dashboard-item">Cloud Solutions</div>
                 </div>
               </div>
-            </motion.div>
+            </motion.div> */}
+<motion.div
+  className="hero-image-wrapper"
+  initial={{ opacity: 0, x: 50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8 }}
+>
+  <img
+    src={heroAnalytics}
+    alt="Business Analytics"
+    className="hero-image"
+  />
+</motion.div>
+            
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "./AboutHero.css";
+import aboutHeroImg from "../../../assets/images/hero/hero-digital-transformation.jpg";
 
 const AboutHero = () => {
   return (
@@ -33,6 +34,10 @@ const AboutHero = () => {
           custom applications, websites,
           and AI-powered business solutions.
         </motion.p>
+
+        <div className="about-hero-image">
+  <img src={aboutHeroImg} alt="Digital Transformation" />
+</div>
 
       </div>
 

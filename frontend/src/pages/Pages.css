@@ -1,0 +1,13 @@
+.product-showcase{
+  padding:0 0 80px;
+}
+
+.showcase-image{
+  width:100%;
+  border-radius:30px;
+  object-fit:cover;
+  max-height:450px;
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.12);
+}
