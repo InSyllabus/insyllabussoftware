@@ -1,5 +1,7 @@
 const Job = require("../models/Job");
 const Application = require("../models/Application");
+const sendEmail = require("../utils/sendEmail");
+const applicationReceivedTemplate = require("../templates/emails/applicationReceived");
 
 // Create Job
 exports.createJob = async (req, res) => {
@@ -232,6 +234,19 @@ exports.applyForJob = async (req, res) => {
 
       resume: `/uploads/resumes/${req.file.filename}`,
     });
+
+    try {
+      await sendEmail({
+        to: email,
+        subject: `Application Received - ${job.title}`,
+        html: applicationReceivedTemplate({
+          fullName,
+          jobTitle: job.title,
+        }),
+      });
+    } catch (emailError) {
+      console.error("Email sending failed:", emailError);
+    }
 
     res.status(201).json({
       success: true,
