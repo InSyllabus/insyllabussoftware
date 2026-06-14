@@ -5,6 +5,10 @@ node_modules/
 dist/
 build/
 
+# Uploads
+uploads/
+src/uploads/
+
 # Logs
 logs
 *.log
