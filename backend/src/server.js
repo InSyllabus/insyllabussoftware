@@ -38,6 +38,7 @@ app.get("/", (req, res) => {
 // Routes
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/contact", require("./routes/contactRoutes"));
+app.use("/api/career", require("./routes/careerRoutes"));
 
 // 404 Handler
 app.use((req, res) => {

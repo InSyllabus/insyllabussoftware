@@ -2,6 +2,7 @@ const Admin = require("../models/auth");
 const bcrypt = require("bcryptjs");
 const generateToken = require("../utils/Token");
 
+
 exports.loginAdmin = async (req, res) => {
   try {
     const { email, password } = req.body;
