@@ -6,34 +6,41 @@ import {
 } from "react-icons/fa";
 
 import "./WhyProducts.css";
+import innovationImg from "../../../assets/images/Product categories/innovation.png";
+import scalabilityImg from "../../../assets/images/Product categories/scalability.png";
+import securityImg from "../../../assets/images/Product categories/security.png";
+import userExperienceImg from "../../../assets/images/Product categories/user_experience.png";
 
 const features = [
   {
-    icon: <FaRocket />,
+    image: innovationImg,
     title: "Innovation",
     description:
       "Built with modern technologies to solve real-world challenges.",
   },
   {
-    icon: <FaExpandArrowsAlt />,
+    image: scalabilityImg,
     title: "Scalability",
-    description: "Designed to grow with users, businesses, and future demands.",
+    description:
+      "Designed to grow with users, businesses, and future demands.",
   },
   {
-    icon: <FaShieldAlt />,
+    image: securityImg,
     title: "Security",
-    description: "Strong focus on privacy, reliability, and data protection.",
+    description:
+      "Strong focus on privacy, reliability, and data protection.",
   },
   {
-    icon: <FaHeart />,
+    image: userExperienceImg,
     title: "User Experience",
-    description: "Simple, intuitive, and engaging experiences for every user.",
+    description:
+      "Simple, intuitive, and engaging experiences for every user.",
   },
 ];
 
 const WhyProducts = () => {
   return (
-    <section className="bg-light">
+    <section className="bg-light py-5">
       <div className="container">
         <div className="text-center mb-5">
           <h2>Why Our Products</h2>
@@ -43,7 +50,11 @@ const WhyProducts = () => {
           {features.map((feature, index) => (
             <div className="col-lg-3 col-md-6" key={index}>
               <div className="why-product-card">
-                <div className="why-product-icon">{feature.icon}</div>
+                <img
+                  src={feature.image}
+                  alt={feature.title}
+                  className="why-product-image"
+                />
 
                 <h4>{feature.title}</h4>
 

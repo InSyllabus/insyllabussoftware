@@ -38,3 +38,48 @@
 
   margin-bottom: 20px;
 }
+
+.service-page-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 30px;
+  height: 100%;
+  text-align: center;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.service-page-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(79, 70, 229, 0.15);
+}
+
+.service-page-image {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.service-page-card h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.service-page-card p {
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .service-page-image {
+    width: 170px;
+    height: 170px;
+  }
+
+  .service-page-card {
+    padding: 20px;
+  }
+}

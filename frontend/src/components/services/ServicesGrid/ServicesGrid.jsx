@@ -1,30 +1,34 @@
-import { FaCode, FaGlobe, FaMobileAlt, FaRobot, FaCogs } from "react-icons/fa";
+import softwareDevelopmentImg from "../../../assets/images/services/softwaredevelopment.png";
+import websiteDevelopmentImg from "../../../assets/images/services/websitedevelopment.png";
+import applicationDevelopmentImg from "../../../assets/images/services/applicationdevelopment.png";
+import softwareServicesImg from "../../../assets/images/services/softwareservices.png";
+import aiAutomationsImg from "../../../assets/images/services/aiautomations.png";
 
 import "./ServicesGrid.css";
 
 const services = [
   {
-    icon: <FaCode />,
+    image: softwareDevelopmentImg,
     title: "Software Development",
     desc: "Custom business software, ERP, CRM, portals and enterprise solutions.",
   },
   {
-    icon: <FaGlobe />,
+    image: websiteDevelopmentImg,
     title: "Website Development",
     desc: "Corporate websites, portals and modern web platforms.",
   },
   {
-    icon: <FaMobileAlt />,
+    image: applicationDevelopmentImg,
     title: "Application Development",
     desc: "Android, iOS and cross-platform mobile applications.",
   },
   {
-    icon: <FaRobot />,
+    image: aiAutomationsImg,
     title: "AI Automations",
     desc: "Chatbots, workflows and AI-powered business automation.",
   },
   {
-    icon: <FaCogs />,
+    image: softwareServicesImg,
     title: "Software Services",
     desc: "Maintenance, optimization, upgrades and technical consulting.",
   },
@@ -38,7 +42,11 @@ const ServicesGrid = () => {
           {services.map((service, index) => (
             <div className="col-lg-4 col-md-6" key={index}>
               <div className="service-page-card">
-                <div className="service-page-icon">{service.icon}</div>
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="service-page-image"
+                />
 
                 <h4>{service.title}</h4>
 
