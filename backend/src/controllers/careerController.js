@@ -137,13 +137,100 @@ exports.deleteJob = async (req, res) => {
 // Apply for Job
 exports.applyForJob = async (req, res) => {
   try {
+    const {
+      jobId,
+      fullName,
+      email,
+      phone,
+      currentLocation,
+      degree,
+      college,
+      graduationYear,
+      cgpaOrPercentage,
+      yearsOfExperience,
+      currentCompany,
+      currentCTC,
+      expectedCTC,
+      noticePeriod,
+      linkedinProfile,
+      portfolioOrGithub,
+    } = req.body;
+
+    const job = await Job.findById(jobId);
+
+    if (!job) {
+      return res.status(404).json({
+        success: false,
+        message: "Job not found",
+      });
+    }
+
+    if (!req.file) {
+      return res.status(400).json({
+        success: false,
+        message: "Resume is required",
+      });
+    }
+
+    if (
+      !jobId ||
+      !fullName ||
+      !email ||
+      !phone ||
+      !degree ||
+      !college ||
+      !graduationYear
+    ) {
+      return res.status(400).json({
+        success: false,
+        message: "Please fill all required fields",
+      });
+    }
+
+    const existingApplication = await Application.findOne({
+      job: jobId,
+      email: email.toLowerCase(),
+    });
+
+    if (existingApplication) {
+      return res.status(400).json({
+        success: false,
+        message: "You have already applied for this position",
+      });
+    }
+
+    if (!job.isActive) {
+      return res.status(400).json({
+        success: false,
+        message: "This position is no longer accepting applications",
+      });
+    }
+
     const application = await Application.create({
-      job: req.body.jobId,
-      fullName: req.body.fullName,
-      email: req.body.email,
-      phone: req.body.phone,
-      message: req.body.message,
-      resume: req.file ? req.file.path : "",
+      job: jobId,
+
+      fullName,
+      email,
+      phone,
+      currentLocation,
+
+      education: {
+        degree,
+        college,
+        graduationYear,
+        cgpaOrPercentage,
+      },
+
+      yearsOfExperience,
+      currentCompany,
+      currentCTC,
+      expectedCTC,
+      noticePeriod,
+
+      linkedinProfile,
+      portfolioOrGithub,
+
+      resume: `/uploads/resumes/${req.file.filename}`,
     });
 
     res.status(201).json({

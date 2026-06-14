@@ -8,6 +8,13 @@ const app = express();
 
 connectDB();
 
+const path = require("path");
+
+app.use(
+  "/uploads",
+  express.static(path.join(__dirname, "../uploads"))
+);
+
 const whitelist = [
   "http://localhost:5173",
   "https://insyllabussoftware.com",
