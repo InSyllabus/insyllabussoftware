@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { getApplications } from "../api/careerApi";
 
 export default function Applications() {
+  const BASE_URL = import.meta.env.VITE_API_BASE_URL_DOC;
+
   const [applications, setApplications] = useState([]);
   const [selectedApplication, setSelectedApplication] =
     useState(null);
@@ -237,10 +239,7 @@ export default function Applications() {
 
                 <div className="modal-footer">
                   <a
-                    href={`${import.meta.env.VITE_API_URL.replace(
-                      "/api",
-                      ""
-                    )}${selectedApplication.resume}`}
+                    href={`${BASE_URL}${selectedApplication.resume}`}
                     target="_blank"
                     rel="noreferrer"
                     className="btn btn-success"
