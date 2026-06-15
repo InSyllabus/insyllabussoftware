@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink ,useLocation} from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import logo from "../../../assets/logos/Logo.png";
@@ -7,6 +7,10 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+
+    const isAdminRoute =
+    location.pathname.startsWith("/admin");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,11 +23,12 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
   }, []);
 
+    if (isAdminRoute) return null;
+
   return (
     <nav
-      className={`navbar navbar-expand-lg fixed-top ${
-        scrolled ? "navbar-scrolled" : ""
-      }`}
+      className={`navbar navbar-expand-lg fixed-top ${scrolled ? "navbar-scrolled" : ""
+        }`}
     >
       <div className="container">
 
@@ -71,6 +76,11 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink to="/services" className="nav-link">
                 Services
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/careers" className="nav-link">
+                Careers
               </NavLink>
             </li>
 

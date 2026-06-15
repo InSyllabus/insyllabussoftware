@@ -1,0 +1,10 @@
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6 !important;
+  padding: 12px;
+}
+
+.table-bordered th {
+  background: #f8f9fa;
+  font-weight: 600;
+}
