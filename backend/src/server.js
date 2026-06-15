@@ -1,4 +1,6 @@
 require("dotenv").config();
+const fs = require("fs");
+
 
 const express = require("express");
 const cors = require("cors");
@@ -85,6 +87,21 @@ process.on("SIGINT", async () => {
   process.exit(0);
 });
 
+app.get("/test-resumes", (req, res) => {
+  const dir = path.join(__dirname, "../uploads/resumes");
+
+  if (!fs.existsSync(dir)) {
+    return res.json({
+      exists: false,
+      path: dir,
+    });
+  }
+
+  return res.json({
+    exists: true,
+    files: fs.readdirSync(dir),
+  });
+});
 // Start Server
 const PORT = process.env.PORT || 5000;
 
