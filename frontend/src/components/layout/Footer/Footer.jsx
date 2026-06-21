@@ -10,7 +10,7 @@ import {
   FaPhoneAlt,
 } from "react-icons/fa";
 
-import logo from "../../../assets/logos/Logo.png";
+import logo from "../../../assets/logos/Insyallabus_Logo.png";
 
 import "./Footer.css";
 

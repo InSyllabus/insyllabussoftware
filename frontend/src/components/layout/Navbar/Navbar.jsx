@@ -1,7 +1,7 @@
 import { Link, NavLink ,useLocation} from "react-router-dom";
 import { useEffect, useState } from "react";
 
-import logo from "../../../assets/logos/Logo.png";
+import logo from "../../../assets/logos/Insyallabus_Logo.png";
 
 import "./Navbar.css";
 

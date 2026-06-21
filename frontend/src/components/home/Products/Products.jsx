@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 import "./Products.css";
-import insyllabusImg from "../../../assets/images/products/Insyllabus.jpeg";
+import insyllabusImg from "../../../assets/images/products/InSyllabus.jpeg";
 import ridotagImg from "../../../assets/images/products/RidoTag.jpeg";
 
 const Products = () => {
